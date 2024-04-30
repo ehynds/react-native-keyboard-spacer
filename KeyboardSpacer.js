@@ -2,7 +2,6 @@
  * Created by andrewhurst on 10/5/15.
  */
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import {
   Keyboard,
   LayoutAnimation,
@@ -36,12 +35,6 @@ const defaultAnimation = {
 };
 
 export default class KeyboardSpacer extends Component {
-  static propTypes = {
-    topSpacing: PropTypes.number,
-    onToggle: PropTypes.func,
-    style: ViewPropTypes.style,
-  };
-
   static defaultProps = {
     topSpacing: 0,
     onToggle: () => null,
